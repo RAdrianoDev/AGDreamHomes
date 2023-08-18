@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AG - Dream Homes - Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+  <header class="header" id="headerContact">
+    <nav>
+      <a href="index.html"><img src="images/AG-DH_logo00.svg" alt="company logo" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="aboutUs.html">ABOUT US</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+          <li><a href="testimonials.html">TESTIMONIALS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Don't wait any longer, get in touch with us!</h1>
+      <p>Whether it's a custom home design, quality construction, or exceptional renovations, we have the expertise to
+        make it happen.<br>Contact us to schedule a consultation and start turning your dreams into reality. We are
+        eager to work with you and create a space that reflects your unique style and personality.<br>Don't miss this
+        opportunity to partner with us and experience excellence in every aspect of your project. Contact us today, and
+        let's build something extraordinary together!</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- CONTACT  -->
+    <section class="contactForm">
+      <form action="/submit_form" method="post">
+        <!-- Text Input -->
+        <label for="Fname">First Name:</label>
+        <input type="text" id="Fname" name="Fname" required>
+        <br><br>
+
+        <label for="Lname">Last Name:</label>
+        <input type="text" id="Lname" name="Lname" required>
+        <br><br>
+
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Radio Buttons -->
+        <label>Subject:</label><br>
+        <input type="radio" name="subject" value="design"> Design
+        <input type="radio" name="subject" value="construction"> Build/Construction
+        <input type="radio" name="subject" value="renovation"> Renovations
+        <input type="radio" name="subject" value="other"> Other
+        <br><br>
+
+        <!-- Checkbox -->
+        <label for="subscribe">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <br><br>
+
+        <!-- Dropdown Select -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="Canada">Canada</option>
+          <option value="USA">United States</option>
+          <option value="Other">Other</option>
+          <!-- Add more options here -->
+        </select>
+        <br><br>
+
+        <!-- Textarea -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit" id="btn-submit">
+      </form>
+
+    </section>
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footerRow">
+      <div class="footer-col">
+        <img src="images/AG_footer_contact01.jpg" alt="Accommodation">
+        <h3>CONTACT INFORMATION</h3>
+        <p>
+          Phone: 647-000-0000 <br>
+          Email: contact@aghomes.com <br>
+          Office: 1-0000 New Life <br>
+          Toronto, Ontario <br> <br>
+          Certified builder.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <img src="images/AG_footer_ourServices01.jpg" alt="Research Centers">
+        <h3>OUR SERVICES</h3>
+        <ul>
+          <li>Build / Construction</li>
+          <li>Design</li>
+          <li>Site Visits</li>
+          <li>Construction Scheduling</li>
+          <li>Project Budgeting</li>
+          <li>Renovations</li>
+          <li>Project Management</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <p id="madeBy">Made by &copy; AG - Dream Homes</p>
+
+  <!-- JavaScript to show and hide manu where in mobile devices. open/close menus -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+</body>
+
+</html>

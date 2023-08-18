@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AG - Dream Homes - About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="header" id="headerAboutUs">
+      <nav>
+        <a href="index.html"><img src="images/AG-DH_logo00.svg" alt="company logo"/></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutUs.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="testimonials.html">TESTIMONIALS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>A Canadian House Builder.</h1>
+        <p>We are a comprehensive custom home builder, offering our services
+        throughout the Greater Toronto, Mississauga, Etobicoke, and Oakville
+        regions.
+        </p>
+      </div>
+    </header>
+
+    <!-- ABOUT US -->
+    <main>
+
+      <div class="aboutUs">
+        <h1>Who We Are!</h1>
+        <p>We are a reputable Canadian house builder, proudly serving the Greater Toronto area since our establishment in the year 2000. With a wealth of experience and expertise in the construction industry, we specialize in
+        crafting exceptional custom homes that reflect the unique tastes and preferences of our valued clients. At our company, we understand that each homeowner has their own vision and requirements for their dream home. That's why we are dedicated to working on custom house projects, tailoring every aspect of the design and construction to suit your individual needs. Whether you have a specific architectural style in mind or desire unique features and amenities, our team of skilled professionals, including architects, engineers, and craftsmen, work diligently to bring your vision to life with precision and care. Our commitment to excellence extends to all areas of the Greater Toronto region, including Mississauga, Etobicoke, and Oakville.<br><br>Customer satisfaction is at the heart of everything we do, and we take pride in our ability to deliver high-quality custom homes that exceed expectations.<br><br>We look forward to partnering with you to create the perfect custom home that not only reflects your lifestyle but also becomes a place of cherished memories for you and your family.</p>
+      </div>
+
+      <!-- <h1>More About Our Job</h1> -->
+      <div class="aboutUsVideo">
+        <div class="row">
+          <div class="aboutUsVideo-col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8wWIpyLlA74" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+
+          <div class="aboutUsVideo-col">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yLRFKWCVOcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+        </div>  
+      </div>
+
+      <!-- Call to Action -->
+      <section class="cta">
+        <h1>
+          Are you considering building a custom <br> home or undergoing a renovation?
+          <br>
+          Contact Us.
+        </h1>
+        <a href="contact.html" class="hero-btn">CONTACT US</a>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">    
+      <div class="footerRow">
+            <div class="footer-col">
+                <img src="images/AG_footer_contact01.jpg" alt="cellphone picture">
+                <h3>CONTACT INFORMATION</h3>
+                    <p>
+                      Phone: 647-000-0000 <br>
+                      Email: contact@aghomes.com <br>
+                      Office: 1-0000 New Life <br>
+                      Toronto, Ontario <br> <br>
+                      Certified builder.
+                    </p>
+            </div>
+        
+            <div class="footer-col">
+                <img src="images/AG_footer_ourServices01.jpg" alt="architect and engineer talking on a construction site">
+                <h3>OUR SERVICES</h3>
+                    <ul>
+                        <li>Build / Construction</li>
+                        <li>Design</li>
+                        <li>Site Visits</li>
+                        <li>Construction Scheduling</li>
+                        <li>Project Budgeting</li>
+                        <li>Renovations</li>
+                        <li>Project Management</li>
+                    </ul>
+            </div>
+        </div>
+    </footer>
+
+    <p id="madeBy">Made by &copy; AG - Dream Homes</p>
+
+    <!-- JavaScript to show and hide manu where in mobile devices. open/close menus -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
